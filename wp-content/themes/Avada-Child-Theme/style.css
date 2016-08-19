@@ -11,6 +11,31 @@ Text Domain:  Avada
 .fusion-fullwidth.fullwidth-box.fusion-fullwidth-1.fusion-parallax-none.nonhundred-percent-fullwidth {
   min-height: 500px;
 }
+fusion-layout-column.fusion-spacing-no {
+  margin-top: 10px !important;
+}
+fusion-layout-column.fusion-spacing-no .fusion-column-wrapper {
+  background-color: rgba(55, 80, 122, 0.75) !important;
+}
+fusion-layout-column.fusion-spacing-no .fusion-column-wrapper p {
+  text-align: justify !important;
+}
+fusion-layout-column.fusion-spacing-no .fusion-column-wrapper p span {
+  font-size: 20px;
+}
+a.fusion-logo-link img {
+  max-height: 45px;
+}
+.fusion-fullwidth.fullwidth-box.fusion-parallax-none.nonhundred-percent-fullwidth .fusion-video {
+  display: initial;
+}
+.fusion-column-wrapper p {
+  text-align: justify !important;
+  font-size: 20px;
+}
+.content-container {
+  text-align: justify !important;
+}
 @media only screen and (max-width: 640px) {
   #main,
   .footer-area,
