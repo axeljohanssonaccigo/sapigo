@@ -8,8 +8,24 @@ Template: Avada
 Version: 1.0.0
 Text Domain:  Avada
 */
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
 .fusion-fullwidth.fullwidth-box.fusion-fullwidth-1.fusion-parallax-none.nonhundred-percent-fullwidth {
   min-height: 500px;
+}
+.fusion-fullwidth.fullwidth-box {
+  padding-top: 30px !important;
 }
 fusion-layout-column.fusion-spacing-no {
   margin-top: 10px !important;
@@ -26,18 +42,103 @@ fusion-layout-column.fusion-spacing-no .fusion-column-wrapper p span {
 a.fusion-logo-link img {
   max-height: 45px;
 }
-.fusion-fullwidth.fullwidth-box.fusion-parallax-none.nonhundred-percent-fullwidth.fusion-fullwidth-5 img {
-  border-radius: 100px;
-}
 .fusion-fullwidth.fullwidth-box.fusion-parallax-none.nonhundred-percent-fullwidth .fusion-video {
   display: initial;
 }
-.fusion-column-wrapper p {
-  text-align: justify !important;
-  font-size: 20px;
-}
 .content-container {
   text-align: justify !important;
+}
+.rounded img {
+  border-radius: 150px;
+  width: 100%;
+  height: auto;
+}
+#vision-placeholder {
+  display: none;
+}
+#about-us-placeholder {
+  background-color: #fcfcfc !important;
+}
+#about-us-placeholder .fusion-column-wrapper h3 {
+  font-size: 30px;
+}
+#about-us-placeholder .fusion-column-wrapper p {
+  text-align: justify !important;
+  text-align-last: left;
+}
+#about-us-placeholder .fusion-column-wrapper .fusion-imageframe {
+  width: 100%;
+  padding: 10px 0;
+}
+#about-us-placeholder .fusion-column-wrapper .fusion-imageframe img {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+#services-placeholder {
+  display: none;
+  color: #fff;
+}
+#services-placeholder .fusion-row h2 {
+  color: #fff !important;
+}
+#services-placeholder .section-text {
+  color: #fff;
+}
+#customer-cases-placeholder h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+#customer-cases-placeholder p,
+#customer-cases-placeholder ul,
+#customer-cases-placeholder .objectives-text {
+  font-size: 16px;
+}
+#customer-cases-placeholder .objectives-text {
+  min-height: 72px;
+}
+#customer-cases-placeholder ul {
+  padding-left: 20px;
+  margin-top: 0;
+}
+#customer-cases-placeholder ul.bullet-list-results {
+  min-height: 240px;
+}
+#customer-cases-placeholder ul.bullet-list-responsabilities {
+  min-height: 168px;
+}
+#customer-cases-placeholder .fusion-layout-column {
+  margin-top: 0 !important;
+}
+#customer-cases-placeholder .content-boxes-placeholder {
+  padding-top: 20px;
+  min-height: 112px;
+}
+#customer-cases-placeholder .fusion-column.content-box-column {
+  margin-bottom: 10px !important;
+}
+#join-us-placeholder {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+#join-us-placeholder .fusion-row {
+  background-color: transparent !important;
+  padding: 20px 50px !important;
+}
+#join-us-placeholder .fusion-row .fusion-column-wrapper {
+  padding: 10px !important;
+}
+#join-us-placeholder .fusion-row .fusion-layout-column {
+  margin-right: 0 !important;
+}
+#join-us-placeholder .fusion-row .rounded img {
+  max-width: 250px;
+}
+.section-text {
+  color: #7f8795;
+  font-size: 18px;
+  line-height: 1.6em;
 }
 @media only screen and (max-width: 640px) {
   #main,
@@ -45,5 +146,9 @@ a.fusion-logo-link img {
   .page-title-bar,
   body {
     background-attachment: fixed !important;
+  }
+  #customer-cases-placeholder .content-boxes-placeholder {
+    padding-top: 10px;
+    min-height: 108px;
   }
 }

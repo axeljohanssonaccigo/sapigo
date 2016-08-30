@@ -17,9 +17,6 @@ fusion-layout-column.fusion-spacing-no .fusion-column-wrapper p span {
 a.fusion-logo-link img {
   max-height: 45px;
 }
-.fusion-fullwidth.fullwidth-box.fusion-parallax-none.nonhundred-percent-fullwidth.fusion-fullwidth-5 img {
-  border-radius: 100px;
-}
 .fusion-fullwidth.fullwidth-box.fusion-parallax-none.nonhundred-percent-fullwidth .fusion-video {
   display: initial;
 }
@@ -29,4 +26,9 @@ a.fusion-logo-link img {
 }
 .content-container {
   text-align: justify !important;
+}
+.rounded img {
+  border-radius: 150px;
+  width: 100%;
+  height: auto;
 }
