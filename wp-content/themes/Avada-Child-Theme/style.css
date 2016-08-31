@@ -18,13 +18,13 @@ Text Domain:  Avada
   text-align: center;
 }
 p {
-  font-size: 18px;
+  font-size: 20px !important;
   margin-bottom: 0;
 }
 #main {
   background-image: url("/sapigo/wp-content/uploads/2016/08/rock-yoga.jpg");
   background-repeat: repeat;
-  background-attachment: fixed;
+  background-attachment: fixed !important;
   background-position: center center;
   background-size: cover;
   padding-top: 60px;
@@ -34,8 +34,13 @@ p {
 .fusion-is-sticky .fusion-mobile-nav-holder > ul {
   max-height: 332px;
 }
+.section-text {
+  color: #7f8795;
+  font-size: 18px;
+  line-height: 1.6em;
+}
 .fusion-fullwidth.fullwidth-box.fusion-fullwidth-1.fusion-parallax-none.nonhundred-percent-fullwidth {
-  min-height: 500px;
+  min-height: 600px;
 }
 .fusion-fullwidth.fullwidth-box {
   padding-top: 30px !important;
@@ -66,40 +71,20 @@ a.fusion-logo-link img {
   width: 100%;
   height: auto;
 }
-#vision-placeholder {
-  display: none;
+#why-sapigo-placeholder {
+  background-color: rgba(0, 0, 0, 0.8) !important;
 }
-#about-us-placeholder {
-  background-color: rgba(255, 255, 255, 0.95);
-}
-#about-us-placeholder .fusion-column-wrapper h3 {
-  font-size: 30px;
-}
-#about-us-placeholder .fusion-column-wrapper p {
-  text-align: justify !important;
-  text-align-last: left;
-}
-#about-us-placeholder .fusion-column-wrapper .fusion-imageframe {
-  width: 100%;
-  padding: 10px 0;
-}
-#about-us-placeholder .fusion-column-wrapper .fusion-imageframe img {
-  max-width: 150px;
-  display: block;
-  margin: 0 auto;
-}
-#services-placeholder {
-  display: none;
+#why-sapigo-placeholder h2 {
   color: #fff;
 }
-#services-placeholder .fusion-row h2 {
+#why-sapigo-placeholder p {
+  font-family: "PT Sans";
   color: #fff !important;
-}
-#services-placeholder .section-text {
-  color: #fff;
+  text-align: justify !important;
 }
 #customer-cases-placeholder {
-  background-color: rgba(255, 255, 255, 0.9) !important;
+  background-color: #ffffff !important;
+  padding-bottom: 0 !important;
 }
 #customer-cases-placeholder h4 {
   font-size: 20px;
@@ -123,7 +108,7 @@ a.fusion-logo-link img {
   min-height: 240px;
 }
 #customer-cases-placeholder ul.bullet-list-responsabilities {
-  min-height: 168px;
+  min-height: 188px;
 }
 #customer-cases-placeholder .fusion-layout-column {
   margin-top: 0 !important;
@@ -135,8 +120,11 @@ a.fusion-logo-link img {
 #customer-cases-placeholder .fusion-column.content-box-column {
   margin-bottom: 10px !important;
 }
+#about-sapigo-placeholder {
+  background-color: rgba(254, 254, 254, 0.95) !important;
+}
 #join-us-placeholder {
-  background-color: rgba(255, 255, 255, 0.95) !important;
+  background-color: #ffffff !important;
 }
 #join-us-placeholder .fusion-row {
   background-color: transparent !important;
@@ -150,11 +138,56 @@ a.fusion-logo-link img {
 }
 #join-us-placeholder .fusion-row .rounded img {
   max-width: 250px;
+  display: block;
+  margin: 0 auto;
 }
-.section-text {
-  color: #7f8795;
-  font-size: 18px;
-  line-height: 1.6em;
+#join-us-placeholder .fusion-row .fusion-imageframe {
+  padding: 15px;
+  margin: -15px 0;
+}
+#join-us-placeholder .fusion-row a {
+  font-weight: bold;
+  color: #04acdc;
+}
+#join-us-placeholder .fusion-row a:active {
+  color: #04acdc;
+}
+#join-us-placeholder .fusion-row a:focus {
+  color: #04acdc;
+}
+#join-us-placeholder .fusion-row a:hover {
+  color: #00371e !important;
+}
+#join-us-placeholder .fusion-row a:visited {
+  color: #04acdc;
+}
+#leading-sapigo-placeholder {
+  background-color: rgba(252, 252, 252, 0.95) !important;
+}
+#leading-sapigo-placeholder .fusion-column-wrapper h3 {
+  font-size: 30px;
+}
+#leading-sapigo-placeholder .fusion-column-wrapper p {
+  text-align: justify !important;
+  text-align-last: left;
+  min-height: 210px;
+}
+#leading-sapigo-placeholder .fusion-column-wrapper .quote {
+  text-align-last: center !important;
+  font-weight: bold;
+  font-size: 20px;
+  min-height: 10px;
+  margin-top: 30px;
+  letter-spacing: 0.6px;
+}
+#leading-sapigo-placeholder .fusion-column-wrapper .fusion-imageframe {
+  width: 100%;
+  padding: 10px 0;
+}
+#leading-sapigo-placeholder .fusion-column-wrapper .fusion-imageframe img {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 640px) {
   #main,
@@ -178,6 +211,13 @@ a.fusion-logo-link img {
   }
   #join-us-placeholder .fusion-row {
     padding: 0px !important;
+  }
+  #leading-sapigo-placeholder .fusion-column-wrapper p {
+    min-height: 1px;
+  }
+  #leading-sapigo-placeholder .fusion-column-wrapper .quote {
+    min-height: 1px;
+    margin-top: 0;
   }
 }
 @media only screen and (max-width: 800px) {

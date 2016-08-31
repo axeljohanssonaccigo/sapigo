@@ -1,194 +1,235 @@
-    .text-right {
-        text-align: right;
+//COLORS
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+p {
+    font-size: 20px !important;
+    margin-bottom: 0;
+}
+
+#main {
+    background-image: url("/sapigo/wp-content/uploads/2016/08/rock-yoga.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed !important;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 0px;
+    -webkit-background-size: cover;
+}
+
+.fusion-is-sticky .fusion-mobile-nav-holder > ul {
+    max-height: 332px;
+}
+
+.section-text {
+    color: #7f8795;
+    font-size: 18px;
+    line-height: 1.6em;
+}
+
+.fusion-fullwidth.fullwidth-box.fusion-fullwidth-1.fusion-parallax-none.nonhundred-percent-fullwidth {
+    min-height: 600px;
+}
+
+.fusion-fullwidth {
+    &.fullwidth-box {
+        padding-top: 30px !important;
     }
-    
-    .text-left {
-        text-align: left;
-    }
-    
-    .text-center {
-        text-align: center;
-    }
-    
-    p {
-        font-size: 18px;
-        margin-bottom: 0;
-    }
-    
-    #main {
-        background-image: url("/sapigo/wp-content/uploads/2016/08/rock-yoga.jpg");
-        background-repeat: repeat;
-        background-attachment: fixed;
-        background-position: center center;
-        background-size: cover;
-        padding-top: 60px;
-        padding-bottom: 0px;
-        -webkit-background-size: cover;
-    }
-    
-    .fusion-is-sticky .fusion-mobile-nav-holder > ul {
-        max-height: 332px;
-    }
-    
-    .fusion-fullwidth.fullwidth-box.fusion-fullwidth-1.fusion-parallax-none.nonhundred-percent-fullwidth {
-        min-height: 500px;
-    }
-    
-    .fusion-fullwidth {
-        &.fullwidth-box {
-            padding-top: 30px !important;
-        }
-    }
-    
-    fusion-layout-column.fusion-spacing-no {
-        margin-top: 10px !important;
-        .fusion-column-wrapper {
-            background-color: rgba(55, 80, 122, 0.75) !important;
-            p {
-                text-align: justify !important;
-                span {
-                    font-size: 20px;
-                }
+}
+
+fusion-layout-column.fusion-spacing-no {
+    margin-top: 10px !important;
+    .fusion-column-wrapper {
+        background-color: rgba(55, 80, 122, 0.75) !important;
+        p {
+            text-align: justify !important;
+            span {
+                font-size: 20px;
             }
         }
     }
-    
-    a.fusion-logo-link img {
-        max-height: 45px;
+}
+
+a.fusion-logo-link img {
+    max-height: 45px;
+}
+
+.fusion-fullwidth.fullwidth-box.fusion-parallax-none.nonhundred-percent-fullwidth {
+    .fusion-video {
+        display: initial;
     }
-    
-    .fusion-fullwidth.fullwidth-box.fusion-parallax-none.nonhundred-percent-fullwidth {
-        .fusion-video {
-            display: initial;
-        }
+}
+
+.content-container {
+    text-align: justify !important;
+}
+
+.rounded {
+    img {
+        border-radius: 150px;
+        width: 100%;
+        height: auto;
     }
-    
-    .content-container {
+}
+
+//Containers
+#why-sapigo-placeholder {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    h2 {
+        color: #fff;
+    }
+    p {
+        font-family: "PT Sans";
+        color: #fff !important;
         text-align: justify !important;
     }
-    
-    .rounded {
-        img {
-            border-radius: 150px;
-            width: 100%;
-            height: auto;
+}
+
+#customer-cases-placeholder {
+    background-color: rgba(255, 255, 255, 1) !important;
+    padding-bottom: 0 !important;
+    h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    p,
+    ul,
+    .objectives-text {
+        font-size: 16px;
+    }
+    .objectives-text {
+        min-height: 72px;
+    }
+    ul {
+        padding-left: 20px;
+        margin-top: 0;
+        &.bullet-list-results {
+            min-height: 240px;
+        }
+        &.bullet-list-responsabilities {
+            min-height: 188px;
         }
     }
-    
-    //Containers
-    #vision-placeholder {
-        display: none;
-        h2 {}
+    .fusion-layout-column {
+        margin-top: 0 !important;
     }
-    
-    #about-us-placeholder {
-        //        background-color: transparent;
-        background-color: rgba(255, 255, 255, 0.95);
+    .fusion-content-boxes {}
+    .content-boxes-placeholder {
+        padding-top: 20px;
+        min-height: 112px;
+    }
+    .fusion-column.content-box-column {
+        margin-bottom: 10px !important;
+    }
+}
+
+#about-sapigo-placeholder {
+    background-color: rgba(254, 254, 254, 0.95) !important;
+    h2 {
         //        color: #fff;
-        .floating-on-top {}
+    }
+    p {
+        //        color: #fff;
+    }
+}
+
+#join-us-placeholder {
+    background-color: rgba(255, 255, 255, 1) !important;
+    //background-color: rgba(253, 253, 253, 1) !important;
+    .fusion-row {
+        background-color: transparent !important;
+        padding: 20px 50px !important;
+        h2 {
+            //            color: #fff;
+        }
+        p {
+            //            color: #fff;
+        }
         .fusion-column-wrapper {
-            h2 {
-                //                color: #fff;
-            }
-            h3 {
-                font-size: 30px;
-                //                color: #fff;
-            }
-            p {
-                text-align: justify !important;
-                text-align-last: left;
-                //                color: #fff;
-            }
-            .section-text {
-                //                color: #fff;
-            }
-            .fusion-imageframe {
-                width: 100%;
-                img {
-                    max-width: 150px;
-                    display: block;
-                    margin: 0 auto;
-                }
-                &:hover {}
-                padding: 10px 0;
-            }
-        }
-    }
-    
-    #services-placeholder {
-        display: none;
-        color: #fff;
-        .fusion-row {
-            h2 {
-                color: #fff !important;
-            }
-        }
-        .section-text {
-            color: #fff;
-        }
-    }
-    
-    #customer-cases-placeholder {
-        background-color: rgba(255, 255, 255, 0.9) !important;
-        h4 {
-            font-size: 20px;
-            margin-bottom: 10px;
-            margin-top: 10px;
-            font-weight: bold;
-        }
-        p,
-        ul,
-        .objectives-text {
-            font-size: 16px;
-        }
-        .objectives-text {
-            min-height: 72px;
-        }
-        ul {
-            padding-left: 20px;
-            margin-top: 0;
-            &.bullet-list-results {
-                min-height: 240px;
-            }
-            &.bullet-list-responsabilities {
-                min-height: 168px;
-            }
+            padding: 10px !important;
         }
         .fusion-layout-column {
-            margin-top: 0 !important;
+            margin-right: 0 !important;
         }
-        .fusion-content-boxes {}
-        .content-boxes-placeholder {
-            padding-top: 20px;
-            min-height: 112px;
-        }
-        .fusion-column.content-box-column {
-            margin-bottom: 10px !important;
-        }
-    }
-    
-    #join-us-placeholder {
-        background-color: rgba(255, 255, 255, 0.95) !important;
-        .fusion-row {
-            background-color: transparent !important;
-            padding: 20px 50px !important;
-            p {}
-            .fusion-column-wrapper {
-                padding: 10px !important;
-            }
-            .fusion-layout-column {
-                margin-right: 0 !important;
-            }
-            .rounded {
-                img {
-                    max-width: 250px;
-                }
+        .rounded {
+            img {
+                max-width: 250px;
+                display: block;
+                margin: 0 auto;
             }
         }
+        .fusion-imageframe {
+            padding: 15px;
+            margin: -15px 0;
+        }
+        a {
+            font-weight: bold;
+            color: rgb(4, 172, 220);
+            &:active {
+                color: rgb(4, 172, 220);
+            }
+            &:focus {
+                color: rgb(4, 172, 220);
+            }
+            &:hover {
+                color: rgb(0, 55, 30) !important;
+            }
+            &:visited {
+                color: rgb(4, 172, 220);
+            }
+        }
     }
-    
-    .section-text {
-        color: #7f8795;
-        font-size: 18px;
-        line-height: 1.6em;
+}
+
+#leading-sapigo-placeholder {
+    background-color: rgba(252, 252, 252, 0.95) !important;
+    .floating-on-top {}
+    .fusion-column-wrapper {
+        h2 {
+            //                color: #fff;
+        }
+        h3 {
+            font-size: 30px;
+            //                color: #fff;
+        }
+        p {
+            text-align: justify !important;
+            text-align-last: left;
+            min-height: 210px;
+            //                color: #fff;
+        }
+        .quote {
+            text-align-last: center !important;
+            font-weight: bold;
+            font-size: 20px;
+            min-height: 10px;
+            margin-top: 30px;
+            letter-spacing: 0.6px;
+        }
+        .section-text {
+            //                color: #fff;
+        }
+        .fusion-imageframe {
+            width: 100%;
+            img {
+                max-width: 150px;
+                display: block;
+                margin: 0 auto;
+            }
+            &:hover {}
+            padding: 10px 0;
+        }
     }
+}
