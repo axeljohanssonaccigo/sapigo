@@ -3,12 +3,38 @@
     .footer-area,
     .page-title-bar,
     body {
-        background-attachment: fixed !important;
+     background-attachment: fixed !important;
+ }
+    .fusion-column-wrapper {
+        padding: 0px !important;
     }
     #customer-cases-placeholder {
         .content-boxes-placeholder {
             padding-top: 10px;
             min-height: 108px;
         }
+        ul {
+            &.bullet-list-results {
+                min-height: 20px;
+            }
+            &.bullet-list-responsabilities {
+                min-height: 20px;
+            }
+        }
+    }
+    #about-us-placeholder {}
+    #join-us-placeholder {
+        .fusion-row {
+            padding: 0px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .ua-mobile #main,
+    .ua-mobile .footer-area,
+    .ua-mobile .fusion-page-title-bar,
+    .ua-mobile body {
+        background-attachment: fixed !important;
     }
 }

@@ -31,6 +31,9 @@ p {
   padding-bottom: 0px;
   -webkit-background-size: cover;
 }
+.fusion-is-sticky .fusion-mobile-nav-holder > ul {
+  max-height: 332px;
+}
 .fusion-fullwidth.fullwidth-box.fusion-fullwidth-1.fusion-parallax-none.nonhundred-percent-fullwidth {
   min-height: 500px;
 }
@@ -67,7 +70,7 @@ a.fusion-logo-link img {
   display: none;
 }
 #about-us-placeholder {
-  background-color: #fcfcfc !important;
+  background-color: rgba(255, 255, 255, 0.95);
 }
 #about-us-placeholder .fusion-column-wrapper h3 {
   font-size: 30px;
@@ -94,6 +97,9 @@ a.fusion-logo-link img {
 }
 #services-placeholder .section-text {
   color: #fff;
+}
+#customer-cases-placeholder {
+  background-color: rgba(255, 255, 255, 0.9) !important;
 }
 #customer-cases-placeholder h4 {
   font-size: 20px;
@@ -157,8 +163,28 @@ a.fusion-logo-link img {
   body {
     background-attachment: fixed !important;
   }
+  .fusion-column-wrapper {
+    padding: 0px !important;
+  }
   #customer-cases-placeholder .content-boxes-placeholder {
     padding-top: 10px;
     min-height: 108px;
+  }
+  #customer-cases-placeholder ul.bullet-list-results {
+    min-height: 20px;
+  }
+  #customer-cases-placeholder ul.bullet-list-responsabilities {
+    min-height: 20px;
+  }
+  #join-us-placeholder .fusion-row {
+    padding: 0px !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .ua-mobile #main,
+  .ua-mobile .footer-area,
+  .ua-mobile .fusion-page-title-bar,
+  .ua-mobile body {
+    background-attachment: fixed !important;
   }
 }
