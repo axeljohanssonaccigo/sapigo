@@ -18,18 +18,18 @@ Text Domain:  Avada
   text-align: center;
 }
 p {
-  font-size: 20px !important;
+  font-size: 19px !important;
   margin-bottom: 0;
 }
-#main {
-  background-image: url("/sapigo/wp-content/uploads/2016/08/rock-yoga.jpg");
-  background-repeat: repeat;
-  background-attachment: fixed !important;
-  background-position: center center;
-  background-size: cover;
-  padding-top: 60px;
-  padding-bottom: 0px;
-  -webkit-background-size: cover;
+#main h1 {
+  background-color: rgba(0, 14, 56, 0.7);
+  padding: 5px;
+  float: right;
+  border-radius: 11px;
+  margin-top: -50px;
+  margin-right: -90px;
+  font-family: "Gill Sans MT";
+  letter-spacing: 2px;
 }
 .fusion-is-sticky .fusion-mobile-nav-holder > ul {
   max-height: 332px;
@@ -124,7 +124,7 @@ a.fusion-logo-link img {
   background-color: rgba(254, 254, 254, 0.95) !important;
 }
 #join-us-placeholder {
-  background-color: #ffffff !important;
+  background-color: #fdfdfd !important;
 }
 #join-us-placeholder .fusion-row {
   background-color: transparent !important;
@@ -218,6 +218,9 @@ a.fusion-logo-link img {
   #leading-sapigo-placeholder .fusion-column-wrapper .quote {
     min-height: 1px;
     margin-top: 0;
+  }
+  #main.force-background-att {
+    background-attachment: fixed !important;
   }
 }
 @media only screen and (max-width: 800px) {
