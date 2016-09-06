@@ -37,8 +37,8 @@ p {
   float: right;
   border-radius: 11px;
   margin-top: -50px;
-  margin-right: -60px;
-  font-family: "Gill Sans MT";
+  margin-right: -20px;
+  font-family: "Verdana";
   letter-spacing: 2px;
 }
 .fusion-is-sticky .fusion-mobile-nav-holder > ul {
