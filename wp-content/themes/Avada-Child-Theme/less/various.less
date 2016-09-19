@@ -1,4 +1,9 @@
 //COLORS
+@sapigo-dark-blue: #273776; //rgb(39,55,118)
+@sapigo-light-blue: #04acdc; //rgb(4,172,220)
+@p-dark: rgb(84, 84, 84);
+@p-light: rgb(255, 255, 255);
+@bck-img-blue: rgb(0, 18, 61);
 .text-right {
     text-align: right;
 }
@@ -11,13 +16,36 @@
     text-align: center;
 }
 
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
 p {
     font-size: 19px !important;
     margin-bottom: 0;
 }
 
+.fusion-main-menu > ul > li > a,
+.side-nav li a {
+    font-size: 14px !important;
+}
+
+h2 {
+    margin-bottom: 30px !important;
+    margin-top: 0 !important;
+    font-size: 45px;
+}
+
+.fusion-content-boxes {
+    margin-bottom: 15px !important;
+}
+
 #main {
-    background-image: url("/sapigo/wp-content/uploads/2015/10/platform.jpg");
+    background-image: url("/sapigo/wp-content/uploads/2016/09/platform-light-1920px.jpg");
     background-repeat: repeat;
     background-attachment: fixed !important;
     background-position: center center;
@@ -25,21 +53,46 @@ p {
     padding-top: 60px;
     padding-bottom: 0px;
     -webkit-background-size: cover;
-    h1 {
-        background-color: rgba(0, 14, 56, 0.7);
+    #sapigo-big-title {
+        background-color: rgba(0, 0, 0, 0.8);
         padding: 5px;
         float: right;
-        border-radius: 11px;
-        margin-top: -50px;
-        margin-right: -20px;
-        font-weight: bold;
-        font-family: "Source Sans Pro";
-        letter-spacing: 2px;
+        border-radius: 8px;
+        margin: 0 !important;
+        text-align: center;
+        h1 {
+            margin: 0 !important;
+            font-size: 70px !important;
+            font-family: "Source Sans Pro";
+            letter-spacing: 2px;
+            line-height: 1.2em !important;
+        }
+        .fusion-column-wrapper {
+            padding: 0 !important;
+        }
     }
 }
 
+#content {}
+
 .fusion-is-sticky .fusion-mobile-nav-holder > ul {
     max-height: 332px;
+}
+
+.fusion-header-wrapper {
+    max-height: 83px !important;
+    .fusion-header-sticky-height {
+        //        max-height: 83px !important;
+    }
+    .fusion-header {
+        max-height: 83px !important;
+        .fusion-row {
+            max-height: 83px !important;
+            .fusion-main-menu {
+                max-height: 83px !important;
+            }
+        }
+    }
 }
 
 .section-text {
@@ -54,7 +107,7 @@ p {
 
 .fusion-fullwidth {
     &.fullwidth-box {
-        padding-top: 30px !important;
+        //        padding-top: 30px !important;
     }
 }
 
@@ -72,7 +125,15 @@ fusion-layout-column.fusion-spacing-no {
 }
 
 a.fusion-logo-link img {
-    max-height: 45px;
+    max-height: 43px;
+}
+
+.fusion-logo {
+    margin-top: 20px !important;
+}
+
+.fusion-header {
+    max-height: 83px;
 }
 
 .fusion-fullwidth.fullwidth-box.fusion-parallax-none.nonhundred-percent-fullwidth {
@@ -95,7 +156,11 @@ a.fusion-logo-link img {
 
 //Containers
 #why-sapigo-placeholder {
+    //    background-color: rgba(0, 18, 61, 0.9) !important;
     background-color: rgba(0, 0, 0, 0.8) !important;
+    .fusion-row {
+        padding: 20px 50px !important;
+    }
     h2 {
         color: #fff;
     }
@@ -106,48 +171,70 @@ a.fusion-logo-link img {
     }
 }
 
-#customer-cases-placeholder {
+#customer-cases-placeholder-mobile {
+    display: none;
+}
+
+#customer-cases-placeholder-desktop {
+    display: block;
     background-color: rgba(255, 255, 255, 1) !important;
     padding-bottom: 0 !important;
+    padding-top: 1.5% !important;
+    .fusion-row {
+        padding: 20px 50px !important;
+    }
     h4 {
         font-size: 20px;
         margin-bottom: 10px;
         margin-top: 10px;
         font-weight: bold;
     }
-    p,
-    ul,
-    .objectives-text {
-        font-size: 16px;
-    }
-    .objectives-text {
-        min-height: 72px;
-    }
-    ul {
-        padding-left: 20px;
-        margin-top: 0;
-        &.bullet-list-results {
-            min-height: 240px;
-        }
-        &.bullet-list-responsabilities {
-            min-height: 188px;
-        }
-    }
+    //    p,
+    //    ul,
+    //    .objectives-text {
+    //        font-size: 16px;
+    //    }
+    //    .objectives-text {
+    //        //        min-height: 72px;
+    //    }
+    //    ul {
+    //        padding-left: 20px;
+    //        margin-top: 0;
+    //        //            &.bullet-list-results {
+    //        //            min-height: 240px;
+    //        //        }
+    //        //        &.bullet-list-responsabilities {
+    //        //            min-height: 220px;
+    //        //        }
+    //    }
     .fusion-layout-column {
         margin-top: 0 !important;
     }
-    .fusion-content-boxes {}
+    .fusion-content-boxes {
+        margin-bottom: 0 !important;
+    }
     .content-boxes-placeholder {
-        padding-top: 20px;
-        min-height: 112px;
+        //        padding-top: 20px;
+        min-height: 10px;
+        .content-box-column {
+            .heading {
+                margin-bottom: 0 !important;
+                h2 {
+                    margin-bottom: 5px !important;
+                }
+            }
+        }
     }
     .fusion-column.content-box-column {
-        margin-bottom: 10px !important;
+        margin-bottom: 0 !important;
     }
 }
 
 #about-sapigo-placeholder {
     background-color: rgba(254, 254, 254, 0.95) !important;
+    .fusion-row {
+        padding: 20px 50px !important;
+    }
     h2 {
         //        color: #fff;
     }
@@ -157,6 +244,7 @@ a.fusion-logo-link img {
 }
 
 #join-us-placeholder {
+    padding-top: 1.5% !important;
     background-color: rgba(253, 253, 253, 1) !important;
     //background-color: rgba(253, 253, 253, 1) !important;
     .fusion-row {
@@ -164,21 +252,29 @@ a.fusion-logo-link img {
         padding: 20px 50px !important;
         h2 {
             //            color: #fff;
+            margin-bottom: 10px !important;
         }
         p {
             //            color: #fff;
         }
-        .fusion-column-wrapper {
-            padding: 10px !important;
+        #join-us-heading {
+            .fusion-column-wrapper {
+                padding-top: 1px !important;
+                padding-bottom: 0 !important;
+                margin-bottom: 0;
+            }
         }
         .fusion-layout-column {
             margin-right: 0 !important;
         }
-        .rounded {
-            img {
-                max-width: 250px;
-                display: block;
-                margin: 0 auto;
+        .join-us-photo {
+            .fusion-column-wrapper {
+                padding: 20px !important;
+                img {
+                    max-width: 250px;
+                    display: block;
+                    margin: 0 auto;
+                }
             }
         }
         .fusion-imageframe {
@@ -205,37 +301,43 @@ a.fusion-logo-link img {
 }
 
 #leading-sapigo-placeholder {
-    background-color: rgba(252, 252, 252, 0.95) !important;
+    //    background-color: rgba(252, 252, 252, 0.95) !important;
+    //    background-color: rgba(0, 18, 61, 0.9) !important;//    
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    .fusion-row {
+        padding: 20px 50px !important;
+    }
+    h2 {
+        color: #fff;
+        margin-bottom: 0 !important;
+    }
+    h3 {
+        font-size: 30px;
+        color: #fff;
+    }
+    p {
+        text-align: justify !important;
+        text-align-last: left;
+        min-height: 252px;
+        color: #fff;
+    }
+    .quote {
+        text-align-last: center !important;
+        font-weight: bold;
+        font-size: 20px;
+        min-height: 10px;
+        margin-top: 30px;
+        letter-spacing: 0.6px;
+    }
+    .section-text {
+        //                color: #fff;
+    }
     .floating-on-top {}
     .fusion-column-wrapper {
-        h2 {
-            //                color: #fff;
-        }
-        h3 {
-            font-size: 30px;
-            //                color: #fff;
-        }
-        p {
-            text-align: justify !important;
-            text-align-last: left;
-            min-height: 210px;
-            //                color: #fff;
-        }
-        .quote {
-            text-align-last: center !important;
-            font-weight: bold;
-            font-size: 20px;
-            min-height: 10px;
-            margin-top: 30px;
-            letter-spacing: 0.6px;
-        }
-        .section-text {
-            //                color: #fff;
-        }
         .fusion-imageframe {
             width: 100%;
             img {
-                max-width: 150px;
+                max-width: 190px;
                 display: block;
                 margin: 0 auto;
             }

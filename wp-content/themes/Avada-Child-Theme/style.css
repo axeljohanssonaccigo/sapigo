@@ -17,12 +17,30 @@ Text Domain:  Avada
 .text-center {
   text-align: center;
 }
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
 p {
   font-size: 19px !important;
   margin-bottom: 0;
 }
+.fusion-main-menu > ul > li > a,
+.side-nav li a {
+  font-size: 14px !important;
+}
+h2 {
+  margin-bottom: 30px !important;
+  margin-top: 0 !important;
+  font-size: 45px;
+}
+.fusion-content-boxes {
+  margin-bottom: 15px !important;
+}
 #main {
-  background-image: url("/sapigo/wp-content/uploads/2015/10/platform.jpg");
+  background-image: url("/sapigo/wp-content/uploads/2016/09/platform-light-1920px.jpg");
   background-repeat: repeat;
   background-attachment: fixed !important;
   background-position: center center;
@@ -31,19 +49,38 @@ p {
   padding-bottom: 0px;
   -webkit-background-size: cover;
 }
-#main h1 {
-  background-color: rgba(0, 14, 56, 0.7);
+#main #sapigo-big-title {
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 5px;
   float: right;
-  border-radius: 11px;
-  margin-top: -50px;
-  margin-right: -20px;
-  font-weight: bold;
+  border-radius: 8px;
+  margin: 0 !important;
+  text-align: center;
+}
+#main #sapigo-big-title h1 {
+  margin: 0 !important;
+  font-size: 70px !important;
   font-family: "Source Sans Pro";
   letter-spacing: 2px;
+  line-height: 1.2em !important;
+}
+#main #sapigo-big-title .fusion-column-wrapper {
+  padding: 0 !important;
 }
 .fusion-is-sticky .fusion-mobile-nav-holder > ul {
   max-height: 332px;
+}
+.fusion-header-wrapper {
+  max-height: 83px !important;
+}
+.fusion-header-wrapper .fusion-header {
+  max-height: 83px !important;
+}
+.fusion-header-wrapper .fusion-header .fusion-row {
+  max-height: 83px !important;
+}
+.fusion-header-wrapper .fusion-header .fusion-row .fusion-main-menu {
+  max-height: 83px !important;
 }
 .section-text {
   color: #7f8795;
@@ -52,9 +89,6 @@ p {
 }
 .fusion-fullwidth.fullwidth-box.fusion-fullwidth-1.fusion-parallax-none.nonhundred-percent-fullwidth {
   min-height: 600px;
-}
-.fusion-fullwidth.fullwidth-box {
-  padding-top: 30px !important;
 }
 fusion-layout-column.fusion-spacing-no {
   margin-top: 10px !important;
@@ -69,7 +103,13 @@ fusion-layout-column.fusion-spacing-no .fusion-column-wrapper p span {
   font-size: 20px;
 }
 a.fusion-logo-link img {
-  max-height: 45px;
+  max-height: 43px;
+}
+.fusion-logo {
+  margin-top: 20px !important;
+}
+.fusion-header {
+  max-height: 83px;
 }
 .fusion-fullwidth.fullwidth-box.fusion-parallax-none.nonhundred-percent-fullwidth .fusion-video {
   display: initial;
@@ -85,6 +125,9 @@ a.fusion-logo-link img {
 #why-sapigo-placeholder {
   background-color: rgba(0, 0, 0, 0.8) !important;
 }
+#why-sapigo-placeholder .fusion-row {
+  padding: 20px 50px !important;
+}
 #why-sapigo-placeholder h2 {
   color: #fff;
 }
@@ -93,61 +136,71 @@ a.fusion-logo-link img {
   color: #fff !important;
   text-align: justify !important;
 }
-#customer-cases-placeholder {
+#customer-cases-placeholder-mobile {
+  display: none;
+}
+#customer-cases-placeholder-desktop {
+  display: block;
   background-color: #ffffff !important;
   padding-bottom: 0 !important;
+  padding-top: 1.5% !important;
 }
-#customer-cases-placeholder h4 {
+#customer-cases-placeholder-desktop .fusion-row {
+  padding: 20px 50px !important;
+}
+#customer-cases-placeholder-desktop h4 {
   font-size: 20px;
   margin-bottom: 10px;
   margin-top: 10px;
   font-weight: bold;
 }
-#customer-cases-placeholder p,
-#customer-cases-placeholder ul,
-#customer-cases-placeholder .objectives-text {
-  font-size: 16px;
-}
-#customer-cases-placeholder .objectives-text {
-  min-height: 72px;
-}
-#customer-cases-placeholder ul {
-  padding-left: 20px;
-  margin-top: 0;
-}
-#customer-cases-placeholder ul.bullet-list-results {
-  min-height: 240px;
-}
-#customer-cases-placeholder ul.bullet-list-responsabilities {
-  min-height: 188px;
-}
-#customer-cases-placeholder .fusion-layout-column {
+#customer-cases-placeholder-desktop .fusion-layout-column {
   margin-top: 0 !important;
 }
-#customer-cases-placeholder .content-boxes-placeholder {
-  padding-top: 20px;
-  min-height: 112px;
+#customer-cases-placeholder-desktop .fusion-content-boxes {
+  margin-bottom: 0 !important;
 }
-#customer-cases-placeholder .fusion-column.content-box-column {
-  margin-bottom: 10px !important;
+#customer-cases-placeholder-desktop .content-boxes-placeholder {
+  min-height: 10px;
+}
+#customer-cases-placeholder-desktop .content-boxes-placeholder .content-box-column .heading {
+  margin-bottom: 0 !important;
+}
+#customer-cases-placeholder-desktop .content-boxes-placeholder .content-box-column .heading h2 {
+  margin-bottom: 5px !important;
+}
+#customer-cases-placeholder-desktop .fusion-column.content-box-column {
+  margin-bottom: 0 !important;
 }
 #about-sapigo-placeholder {
   background-color: rgba(254, 254, 254, 0.95) !important;
 }
+#about-sapigo-placeholder .fusion-row {
+  padding: 20px 50px !important;
+}
 #join-us-placeholder {
+  padding-top: 1.5% !important;
   background-color: #fdfdfd !important;
 }
 #join-us-placeholder .fusion-row {
   background-color: transparent !important;
   padding: 20px 50px !important;
 }
-#join-us-placeholder .fusion-row .fusion-column-wrapper {
-  padding: 10px !important;
+#join-us-placeholder .fusion-row h2 {
+  margin-bottom: 10px !important;
+}
+#join-us-placeholder .fusion-row #join-us-heading .fusion-column-wrapper {
+  padding-top: 1px !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0;
 }
 #join-us-placeholder .fusion-row .fusion-layout-column {
   margin-right: 0 !important;
 }
-#join-us-placeholder .fusion-row .rounded img {
+#join-us-placeholder .fusion-row .join-us-photo .fusion-column-wrapper {
+  padding: 20px !important;
+}
+#join-us-placeholder .fusion-row .join-us-photo .fusion-column-wrapper img {
   max-width: 250px;
   display: block;
   margin: 0 auto;
@@ -173,17 +226,26 @@ a.fusion-logo-link img {
   color: #04acdc;
 }
 #leading-sapigo-placeholder {
-  background-color: rgba(252, 252, 252, 0.95) !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
 }
-#leading-sapigo-placeholder .fusion-column-wrapper h3 {
+#leading-sapigo-placeholder .fusion-row {
+  padding: 20px 50px !important;
+}
+#leading-sapigo-placeholder h2 {
+  color: #fff;
+  margin-bottom: 0 !important;
+}
+#leading-sapigo-placeholder h3 {
   font-size: 30px;
+  color: #fff;
 }
-#leading-sapigo-placeholder .fusion-column-wrapper p {
+#leading-sapigo-placeholder p {
   text-align: justify !important;
   text-align-last: left;
-  min-height: 210px;
+  min-height: 252px;
+  color: #fff;
 }
-#leading-sapigo-placeholder .fusion-column-wrapper .quote {
+#leading-sapigo-placeholder .quote {
   text-align-last: center !important;
   font-weight: bold;
   font-size: 20px;
@@ -196,16 +258,152 @@ a.fusion-logo-link img {
   padding: 10px 0;
 }
 #leading-sapigo-placeholder .fusion-column-wrapper .fusion-imageframe img {
-  max-width: 150px;
+  max-width: 190px;
   display: block;
   margin: 0 auto;
+}
+@media only screen and (max-width: 1200px) {
+  #leading-sapigo-placeholder .leading-photo .fusion-column-wrapper {
+    padding-bottom: 0 !important;
+  }
+  #leading-sapigo-placeholder .leading-photo .fusion-column-wrapper p {
+    min-height: 1px !important;
+    min-height: 1px;
+    margin: 0 auto;
+    width: 80%;
+    text-align-last: center;
+  }
+  #leading-sapigo-placeholder .leading-photo .fusion-column-wrapper p.quote {
+    padding: 0;
+    margin: 20px auto;
+    width: 60%;
+  }
+  #leading-sapigo-placeholder .fusion-spacing-no.fusion-one-third {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .fusion-fullwidth.fullwidth-box.fusion-fullwidth-1.fusion-parallax-none.nonhundred-percent-fullwidth {
+    min-height: 500px;
+  }
+  .fusion-fullwidth.fullwidth-box {
+    padding-top: 10px !important;
+  }
+  p {
+    font-size: 16px !important;
+    margin-bottom: 0;
+  }
+  #main #sapigo-big-title h1 {
+    font-size: 45px !important;
+    line-height: 1.2em !important;
+  }
+  #customer-cases-placeholder-mobile {
+    display: block;
+    background-color: #ffffff !important;
+  }
+  #customer-cases-placeholder-mobile h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  #customer-cases-placeholder-mobile ul {
+    margin-top: 0 !important;
+  }
+  #customer-cases-placeholder-mobile content-boxes-placeholder {
+    margin-bottom: 0 !important;
+  }
+  #customer-cases-placeholder-mobile .fusion-column-wrapper h4 {
+    font-size: 18px;
+  }
+  #customer-cases-placeholder-mobile .content-box-column .heading {
+    margin-bottom: 0 !important;
+  }
+  #customer-cases-placeholder-mobile .content-box-column .heading h2 {
+    margin-bottom: 5px !important;
+  }
+  #customer-cases-placeholder-desktop {
+    display: none;
+  }
+  #join-us-placeholder .join-us-photo .fusion-column-wrapper {
+    padding: 20px !important;
+  }
+  #join-us-placeholder .join-us-photo .fusion-column-wrapper .rounded {
+    max-width: 200px;
+  }
+  #leading-sapigo-placeholder .leading-photo .fusion-column-wrapper {
+    padding-bottom: 0 !important;
+  }
+  #leading-sapigo-placeholder .leading-photo .fusion-column-wrapper p {
+    min-height: 1px !important;
+    min-height: 1px;
+    margin: 0 auto;
+    width: 80%;
+    text-align-last: center;
+  }
+  #leading-sapigo-placeholder .leading-photo .fusion-column-wrapper p.quote {
+    padding: 0;
+    margin: 20px auto;
+    width: 60%;
+  }
+  #leading-sapigo-placeholder .fusion-spacing-no.fusion-one-third {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .fusion-fullwidth.fullwidth-box.fusion-fullwidth-1.fusion-parallax-none.nonhundred-percent-fullwidth {
+    min-height: 500px;
+  }
+  .fusion-fullwidth.fullwidth-box {
+    padding-top: 0px !important;
+  }
+  p {
+    font-size: 16px !important;
+    margin-bottom: 0;
+  }
+  #main #sapigo-big-title h1 {
+    font-size: 40px !important;
+    line-height: 1.2em !important;
+  }
+  #customer-cases-placeholder ul {
+    padding-left: 20px;
+    margin-top: 0;
+  }
+  #customer-cases-placeholder ul.bullet-list-results {
+    min-height: 240px;
+  }
+  #customer-cases-placeholder ul.bullet-list-responsabilities {
+    min-height: 1px;
+  }
+  .leading-photo .fusion-column-wrapper {
+    padding-bottom: 0 !important;
+  }
+  .leading-photo .fusion-column-wrapper p {
+    min-height: 1px !important;
+    min-height: 1px;
+    margin: 0 auto;
+    width: 80%;
+    text-align-last: center;
+  }
+  .leading-photo .fusion-column-wrapper p.quote {
+    padding: 0;
+    margin: 20px auto;
+    width: 60%;
+  }
 }
 @media only screen and (max-width: 640px) {
   #main,
   .footer-area,
   .page-title-bar,
-  body {
-    background-attachment: fixed !important;
+  .fusion-fullwidth.fullwidth-box.fusion-fullwidth-1.fusion-parallax-none.nonhundred-percent-fullwidth {
+    min-height: 350px;
+  }
+  #main #sapigo-big-title h1 {
+    font-size: 30px !important;
+    line-height: 1.2em !important;
+  }
+  .fusion-fullwidth.fullwidth-box {
+    padding-top: 0px !important;
   }
   .fusion-column-wrapper {
     padding: 0px !important;
@@ -221,7 +419,7 @@ a.fusion-logo-link img {
     min-height: 20px;
   }
   #join-us-placeholder .fusion-row {
-    padding: 0px !important;
+    padding: 10px !important;
   }
   #leading-sapigo-placeholder .fusion-column-wrapper p {
     min-height: 1px;
@@ -229,16 +427,5 @@ a.fusion-logo-link img {
   #leading-sapigo-placeholder .fusion-column-wrapper .quote {
     min-height: 1px;
     margin-top: 0;
-  }
-  #main.force-background-att {
-    background-attachment: fixed !important;
-  }
-}
-@media only screen and (max-width: 800px) {
-  .ua-mobile #main,
-  .ua-mobile .footer-area,
-  .ua-mobile .fusion-page-title-bar,
-  .ua-mobile body {
-    background-attachment: fixed !important;
   }
 }
