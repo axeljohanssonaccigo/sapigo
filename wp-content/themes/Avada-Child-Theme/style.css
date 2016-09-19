@@ -342,6 +342,11 @@ a.fusion-logo-link img {
   #why-sapigo-placeholder-mobile p {
     width: 65%;
   }
+  #why-sapigo-placeholder-mobile #welcome-img .fusion-column-wrapper h1 {
+    padding: 8px 5px;
+    float: right;
+    font-size: 40px !important;
+  }
   .fusion-fullwidth.fullwidth-box.fusion-fullwidth-1.fusion-parallax-none.nonhundred-percent-fullwidth {
     min-height: 500px;
   }
@@ -445,6 +450,11 @@ a.fusion-logo-link img {
   #why-sapigo-placeholder-mobile p {
     width: 100%;
   }
+  #why-sapigo-placeholder-mobile #welcome-img .fusion-column-wrapper h1 {
+    padding: 5px;
+    float: right;
+    font-size: 30px !important;
+  }
   .fusion-fullwidth.fullwidth-box.fusion-fullwidth-1.fusion-parallax-none.nonhundred-percent-fullwidth {
     min-height: 500px;
   }
@@ -511,6 +521,22 @@ a.fusion-logo-link img {
   }
   #why-sapigo-placeholder-mobile p {
     width: 100%;
+  }
+  #why-sapigo-placeholder-mobile #welcome-img .fusion-column-wrapper h1 {
+    padding: 10px 5px;
+    float: right;
+    font-size: 30px !important;
+  }
+  #welcome-img .fusion-column-wrapper {
+    padding: 30px;
+    text-align: center;
+  }
+  #welcome-img .fusion-column-wrapper h1 {
+    background-color: #000;
+    border-radius: 5px;
+    margin: 0 auto;
+    float: right;
+    font-size: 46px !important;
   }
   #main,
   .footer-area,
