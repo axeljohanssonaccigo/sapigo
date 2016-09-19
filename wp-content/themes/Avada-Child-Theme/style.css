@@ -383,6 +383,13 @@ a.fusion-logo-link img {
   }
   #main {
     background-image: url('/sapigo/wp-content/themes/Avada-Child-Theme/img/platform-light-800px.jpg');
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
   }
   #main #sapigo-big-title h1 {
@@ -427,6 +434,13 @@ a.fusion-logo-link img {
   }
   #main {
     background-image: url('/sapigo/wp-content/themes/Avada-Child-Theme/img/platform-light-800px.jpg');
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
   }
   #main #sapigo-big-title h1 {
