@@ -383,6 +383,7 @@ a.fusion-logo-link img {
   }
   #main {
     background-image: url('/sapigo/wp-content/themes/Avada-Child-Theme/img/platform-light-800px.jpg');
+    background-size: cover;
   }
   #main #sapigo-big-title h1 {
     font-size: 40px !important;
@@ -426,6 +427,7 @@ a.fusion-logo-link img {
   }
   #main {
     background-image: url('/sapigo/wp-content/themes/Avada-Child-Theme/img/platform-light-800px.jpg');
+    background-size: cover;
   }
   #main #sapigo-big-title h1 {
     font-size: 30px !important;
