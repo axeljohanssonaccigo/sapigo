@@ -584,6 +584,8 @@ a.fusion-logo-link img {
   #leading-sapigo-placeholder .leading-photo .fusion-column-wrapper {
     padding-bottom: 20px !important;
     padding-top: 30px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   #leading-sapigo-placeholder .leading-photo .fusion-column-wrapper p {
     min-height: 1px !important;
