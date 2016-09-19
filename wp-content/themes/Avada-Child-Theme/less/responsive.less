@@ -1,9 +1,15 @@
 //QUITE BIG
 @media only screen and (max-width: 1200px) {
+    #welcome-img {
+        background-image: url("/sapigo/wp-content/themes/Avada-Child-Theme/img/platform-light-1920px.jpg");
+        min-height: 600px;
+        background-size: cover;
+    }
     #leading-sapigo-placeholder {
         .leading-photo {
             .fusion-column-wrapper {
-                padding-bottom: 0 !important;
+                padding-bottom: 20px !important;
+                padding-top: 30px !important;
                 p {
                     min-height: 1px !important;
                     min-height: 1px;
@@ -24,7 +30,7 @@
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
     #why-sapigo-placeholder-mobile {
         display: none;
     }
@@ -32,6 +38,14 @@
 
 //MEDIUM
 @media only screen and (max-width: 1024px) {
+    #welcome-img {
+        min-height: 500px;
+    }
+    #why-sapigo-placeholder-mobile {
+        p {
+            width: 65%;
+        }
+    }
     .fusion-fullwidth.fullwidth-box.fusion-fullwidth-1.fusion-parallax-none.nonhundred-percent-fullwidth {
         min-height: 500px;
     }
@@ -43,6 +57,7 @@
         margin-bottom: 0;
     }
     #main {
+        background-image: url('#');
         #sapigo-big-title {
             h1 {
                 font-size: 45px !important;
@@ -56,6 +71,7 @@
         }
     }
     #about-sapigo-placeholder {
+        background-color: #ecf0f5 !important;
         .fusion-row {
             padding: 20px 0 !important;
         }
@@ -65,6 +81,7 @@
         background-color: rgba(255, 255, 255, 1) !important;
         .fusion-row {
             padding: 20px 0 !important;
+            width: 65%;
         }
         h4 {
             font-size: 18px;
@@ -109,12 +126,14 @@
         }
     }
     #leading-sapigo-placeholder {
+        background-color: rgba(0, 0, 0, 1) !important;
         .fusion-row {
             padding: 20px 10px !important;
         }
         .leading-photo {
             .fusion-column-wrapper {
-                padding-bottom: 0 !important;
+                padding-bottom: 20px !important;
+                padding-top: 30px !important;
                 p {
                     min-height: 1px !important;
                     min-height: 1px;
@@ -142,6 +161,14 @@
 
 //SMALL
 @media only screen and (max-width: 800px) {
+    #welcome-img {
+        min-height: 450px;
+    }
+    #why-sapigo-placeholder-mobile {
+        p {
+            width: 100%;
+        }
+    }
     .fusion-fullwidth.fullwidth-box.fusion-fullwidth-1.fusion-parallax-none.nonhundred-percent-fullwidth {
         min-height: 500px;
     }
@@ -153,16 +180,7 @@
         margin-bottom: 0;
     }
     #main {
-        background-image: url('/sapigo/wp-content/themes/Avada-Child-Theme/img/platform-light-1920px.jpg');
-        -webkit-background-size: 100%;
-        -moz-background-size: 100%;
-        -o-background-size: 100%;
-        background-size: 100%;
-        background-size: 100%;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        background-image: url('#');
         background-repeat: no-repeat;
         #sapigo-big-title {
             h1 {
@@ -186,24 +204,36 @@
             }
         }
     }
+    #customer-cases-placeholder-mobile {
+        .fusion-row {
+            width: 100%;
+        }
+    }
+    #about-sapigo-placeholder {
+        background-color: #ecf0f5 !important;
+    }
     #join-us-placeholder {
         .fusion-row {
             padding: 20px 0 !important;
         }
     }
-    .leading-photo {
-        .fusion-column-wrapper {
-            padding-bottom: 0 !important;
-            p {
-                min-height: 1px !important;
-                min-height: 1px;
-                margin: 0 auto;
-                width: 100%;
-                text-align-last: center;
-                &.quote {
-                    padding: 0;
-                    margin: 20px auto;
-                    width: 60%;
+    #leading-sapigo-placeholder {
+        background-color: rgba(0, 0, 0, 1) !important;
+        .leading-photo {
+            .fusion-column-wrapper {
+                padding-bottom: 20px !important;
+                padding-top: 30px !important;
+                p {
+                    min-height: 1px !important;
+                    min-height: 1px;
+                    margin: 0 auto;
+                    width: 100%;
+                    text-align-last: center;
+                    &.quote {
+                        padding: 0;
+                        margin: 20px auto;
+                        width: 60%;
+                    }
                 }
             }
         }
@@ -212,6 +242,14 @@
 
 //SMALLEST
 @media only screen and (max-width: 640px) {
+    #welcome-img {
+        min-height: 400px;
+    }
+    #why-sapigo-placeholder-mobile {
+        p {
+            width: 100%;
+        }
+    }
     #main,
     .footer-area,
     .page-title-bar,
@@ -219,15 +257,9 @@
         min-height: 350px;
     }
     #main {
-        background-image: url('/sapigo/wp-content/themes/Avada-Child-Theme/img/platform-light-1920px.jpg');
-        -webkit-background-size: 100%;
-        -moz-background-size: 100%;
-        -o-background-size: 100%;
-        background-size: 100%;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
+        background-image: url('#');
         background-size: cover;
+        background-repeat: no-repeat;
         #sapigo-big-title {
             h1 {
                 font-size: 30px !important;
@@ -238,9 +270,9 @@
     .fusion-fullwidth.fullwidth-box {
         padding-top: 0px !important;
     }
-    .fusion-column-wrapper {
-        padding: 0px !important;
-    }
+    //        .fusion-column-wrapper {
+    //        padding: 0px !important;
+    //    }
     .only-desktop {
         display: none;
     }
@@ -258,16 +290,25 @@
             }
         }
     }
-    #about-sapigo-placeholder {}
+    #customer-cases-placeholder-mobile {
+        .fusion-row {
+            width: 100%;
+        }
+    }
+    #about-sapigo-placeholder {
+        background-color: #ecf0f5 !important;
+    }
     #join-us-placeholder {
         .fusion-row {
             padding: 20px 0 !important;
         }
     }
     #leading-sapigo-placeholder {
+        background-color: rgba(0, 0, 0, 1) !important;
         .leading-photo {
             .fusion-column-wrapper {
-                padding-bottom: 0 !important;
+                padding-bottom: 20px !important;
+                padding-top: 30px !important;
                 p {
                     min-height: 1px !important;
                     min-height: 1px;
