@@ -381,6 +381,9 @@ a.fusion-logo-link img {
     font-size: 16px !important;
     margin-bottom: 0;
   }
+  #main {
+    background-image: url('/sapigo/wp-content/themes/Avada-Child-Theme/img/platform-light-800px.jpg');
+  }
   #main #sapigo-big-title h1 {
     font-size: 40px !important;
     line-height: 1.2em !important;
@@ -420,6 +423,9 @@ a.fusion-logo-link img {
   .page-title-bar,
   .fusion-fullwidth.fullwidth-box.fusion-fullwidth-1.fusion-parallax-none.nonhundred-percent-fullwidth {
     min-height: 350px;
+  }
+  #main {
+    background-image: url('/sapigo/wp-content/themes/Avada-Child-Theme/img/platform-light-800px.jpg');
   }
   #main #sapigo-big-title h1 {
     font-size: 30px !important;
