@@ -45,7 +45,7 @@ h2 {
   background-attachment: fixed !important;
   background-position: center center;
   background-size: cover;
-  padding-top: 60px;
+  padding-top: 0 !important;
   padding-bottom: 0px;
   -webkit-background-size: cover;
 }
@@ -433,7 +433,7 @@ a.fusion-logo-link img {
     min-height: 350px;
   }
   #main {
-    background-image: url('/sapigo/wp-content/themes/Avada-Child-Theme/img/platform-light-800px.jpg');
+    background-image: url('');
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
