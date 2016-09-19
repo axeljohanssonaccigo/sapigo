@@ -393,7 +393,7 @@ a.fusion-logo-link img {
     min-height: 1px !important;
     min-height: 1px;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     text-align-last: center;
   }
   .leading-photo .fusion-column-wrapper p.quote {
@@ -432,12 +432,20 @@ a.fusion-logo-link img {
   #join-us-placeholder .fusion-row {
     padding: 10px !important;
   }
-  #leading-sapigo-placeholder .fusion-column-wrapper p {
-    min-height: 1px;
+  #leading-sapigo-placeholder .leading-photo .fusion-column-wrapper {
+    padding-bottom: 0 !important;
   }
-  #leading-sapigo-placeholder .fusion-column-wrapper .quote {
+  #leading-sapigo-placeholder .leading-photo .fusion-column-wrapper p {
+    min-height: 1px !important;
     min-height: 1px;
-    margin-top: 0;
+    margin: 0 auto;
+    width: 100%;
+    text-align-last: center;
+  }
+  #leading-sapigo-placeholder .leading-photo .fusion-column-wrapper p.quote {
+    padding: 0;
+    margin: 20px auto;
+    width: 80%;
   }
 }
 @media only screen and (max-width: 800px) {
