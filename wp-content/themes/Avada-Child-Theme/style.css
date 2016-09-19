@@ -82,6 +82,9 @@ h2 {
 .fusion-header-wrapper .fusion-header .fusion-row .fusion-main-menu {
   max-height: 83px !important;
 }
+.section-heading {
+  text-transform: uppercase;
+}
 .section-text {
   color: #7f8795;
   font-size: 18px;
@@ -342,6 +345,9 @@ a.fusion-logo-link img {
   #join-us-placeholder .join-us-photo .fusion-column-wrapper .rounded {
     max-width: 200px;
   }
+  #leading-sapigo-placeholder .fusion-row {
+    padding: 20px 10px !important;
+  }
   #leading-sapigo-placeholder .leading-photo .fusion-column-wrapper {
     padding-bottom: 0 !important;
   }
@@ -356,6 +362,9 @@ a.fusion-logo-link img {
     padding: 0;
     margin: 20px auto;
     width: 60%;
+  }
+  #leading-sapigo-placeholder #join-us-placeholder .fusion-row {
+    padding: 30px 0 !important;
   }
   #leading-sapigo-placeholder .fusion-spacing-no.fusion-one-third {
     width: 100%;
@@ -385,6 +394,9 @@ a.fusion-logo-link img {
   }
   #customer-cases-placeholder ul.bullet-list-responsabilities {
     min-height: 1px;
+  }
+  #join-us-placeholder .fusion-row {
+    padding: 20px 0 !important;
   }
   .leading-photo .fusion-column-wrapper {
     padding-bottom: 0 !important;
@@ -430,7 +442,7 @@ a.fusion-logo-link img {
     min-height: 20px;
   }
   #join-us-placeholder .fusion-row {
-    padding: 10px !important;
+    padding: 20px 0 !important;
   }
   #leading-sapigo-placeholder .leading-photo .fusion-column-wrapper {
     padding-bottom: 0 !important;
@@ -446,47 +458,5 @@ a.fusion-logo-link img {
     padding: 0;
     margin: 20px auto;
     width: 80%;
-  }
-}
-@media only screen and (max-width: 800px) {
-  .ua-mobile #main,
-  .ua-mobile .footer-area,
-  .ua-mobile .fusion-page-title-bar,
-  .ua-mobile body {
-    background-attachment: fixed !important;
-  }
-}
-@media only screen and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: landscape) {
-  #main,
-  .fullwidth-box,
-  .fusion-footer-widget-area,
-  .page-title-bar,
-  body {
-    background-attachment: fixed !important;
-  }
-}
-@media only screen and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: portrait) {
-  #main,
-  .fullwidth-box,
-  .fusion-footer-widget-area,
-  .page-title-bar,
-  body {
-    background-attachment: fixed !important;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .ua-mobile #main,
-  .ua-mobile .footer-area,
-  .ua-mobile .fusion-page-title-bar,
-  .ua-mobile body {
-    background-attachment: fixed !important;
-  }
-}
-@media only screen and (max-width: 640px) {
-  #main,
-  .footer-area,
-  .page-title-bar,
-  body {
-    background-attachment: fixed !important;
   }
 }
