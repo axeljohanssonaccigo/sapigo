@@ -132,12 +132,14 @@ a.fusion-logo-link img {
   color: #fff;
 }
 #why-sapigo-placeholder p {
-  font-family: "PT Sans";
   color: #fff !important;
   text-align: justify !important;
 }
 #customer-cases-placeholder-mobile {
   display: none;
+}
+#customer-cases-placeholder-mobile .fusion-row {
+  padding: 30px 0 !important;
 }
 #customer-cases-placeholder-desktop {
   display: block;
@@ -146,7 +148,7 @@ a.fusion-logo-link img {
   padding-top: 1.5% !important;
 }
 #customer-cases-placeholder-desktop .fusion-row {
-  padding: 20px 50px !important;
+  padding: 30px 0 !important;
 }
 #customer-cases-placeholder-desktop h4 {
   font-size: 20px;
@@ -297,9 +299,18 @@ a.fusion-logo-link img {
     font-size: 45px !important;
     line-height: 1.2em !important;
   }
+  #why-sapigo-placeholder .fusion-row {
+    padding: 20px 0 !important;
+  }
+  #about-sapigo-placeholder .fusion-row {
+    padding: 20px 0 !important;
+  }
   #customer-cases-placeholder-mobile {
     display: block;
     background-color: #ffffff !important;
+  }
+  #customer-cases-placeholder-mobile .fusion-row {
+    padding: 20px 0 !important;
   }
   #customer-cases-placeholder-mobile h4 {
     font-size: 18px;
@@ -427,5 +438,47 @@ a.fusion-logo-link img {
   #leading-sapigo-placeholder .fusion-column-wrapper .quote {
     min-height: 1px;
     margin-top: 0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .ua-mobile #main,
+  .ua-mobile .footer-area,
+  .ua-mobile .fusion-page-title-bar,
+  .ua-mobile body {
+    background-attachment: fixed !important;
+  }
+}
+@media only screen and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: landscape) {
+  #main,
+  .fullwidth-box,
+  .fusion-footer-widget-area,
+  .page-title-bar,
+  body {
+    background-attachment: fixed !important;
+  }
+}
+@media only screen and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: portrait) {
+  #main,
+  .fullwidth-box,
+  .fusion-footer-widget-area,
+  .page-title-bar,
+  body {
+    background-attachment: fixed !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .ua-mobile #main,
+  .ua-mobile .footer-area,
+  .ua-mobile .fusion-page-title-bar,
+  .ua-mobile body {
+    background-attachment: fixed !important;
+  }
+}
+@media only screen and (max-width: 640px) {
+  #main,
+  .footer-area,
+  .page-title-bar,
+  body {
+    background-attachment: fixed !important;
   }
 }
