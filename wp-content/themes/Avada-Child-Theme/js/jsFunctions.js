@@ -4,6 +4,8 @@ var screenWidth = jQuery(window).width();
 
 
 document.addEventListener('DOMContentLoaded', function () {
+    //Set the margin on document ready to prevent ugly loading on mobile devices
+    jQuery('#content').css('margin-top', '83px');
     if (!jQuery('.fusion-header-wrapper').hasClass('fusion-is-sticky')) {
         jQuery('.fusion-header-wrapper').addClass('fusion-is-sticky');
     }
