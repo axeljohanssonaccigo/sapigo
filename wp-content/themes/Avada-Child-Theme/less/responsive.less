@@ -1,7 +1,7 @@
 //QUITE BIG
 @media only screen and (max-width: 1200px) {
     #welcome-img {
-        background-image: url("/sapigo/wp-content/themes/Avada-Child-Theme/img/platform-light-1920px.jpg");
+        background-image: url("/sapigo/wp-content/themes/Avada-Child-Theme/img/platform-1920px.jpg");
         min-height: 600px;
         background-size: cover;
     }
@@ -66,6 +66,7 @@
         margin-bottom: 0;
     }
     #main {
+        margin-top: 63px;
         background-image: url('#');
         #sapigo-big-title {
             h1 {
@@ -78,11 +79,19 @@
         .fusion-row {
             padding: 20px 0 !important;
         }
+        p {
+            text-align: justify !important;
+            text-align-last: left;
+        }
     }
     #about-sapigo-placeholder {
         background-color: #ecf0f5 !important;
         .fusion-row {
             padding: 20px 0 !important;
+        }
+        p {
+            text-align: justify !important;
+            text-align-last: left;
         }
     }
     #customer-cases-placeholder-mobile {
@@ -170,6 +179,11 @@
 
 //SMALL
 @media only screen and (max-width: 800px) {
+    .valign-inner {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
     #welcome-img {
         min-height: 450px;
     }
@@ -200,6 +214,7 @@
     #main {
         background-image: url('#');
         background-repeat: no-repeat;
+        margin-top: 63px;
         #sapigo-big-title {
             h1 {
                 font-size: 40px !important;
@@ -260,6 +275,11 @@
 
 //SMALLEST
 @media only screen and (max-width: 640px) {
+    .valign-inner {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
     #welcome-img {
         min-height: 400px;
     }
@@ -300,6 +320,7 @@
         background-image: url('#');
         background-size: cover;
         background-repeat: no-repeat;
+        margin-top: 63px;
         #sapigo-big-title {
             h1 {
                 font-size: 30px !important;
