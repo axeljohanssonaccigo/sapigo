@@ -73,7 +73,6 @@ h2 {
   background-size: cover;
   padding-top: 0 !important;
   padding-bottom: 0px;
-  margin-top: 83px;
   -webkit-background-size: cover;
 }
 #main #sapigo-big-title {
@@ -93,6 +92,9 @@ h2 {
 }
 #main #sapigo-big-title .fusion-column-wrapper {
   padding: 0 !important;
+}
+#main #content {
+  margin-top: 83px;
 }
 .fusion-is-sticky .fusion-mobile-nav-holder > ul {
   max-height: 332px;
@@ -403,7 +405,6 @@ footer#footer a:hover {
     margin-bottom: 0;
   }
   #main {
-    margin-top: 63px;
     background-image: url('#');
   }
   #main #sapigo-big-title h1 {
@@ -527,7 +528,6 @@ footer#footer a:hover {
   #main {
     background-image: url('#');
     background-repeat: no-repeat;
-    margin-top: 63px;
   }
   #main #sapigo-big-title h1 {
     font-size: 40px !important;
@@ -613,7 +613,6 @@ footer#footer a:hover {
     background-image: url('#');
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 63px;
   }
   #main #sapigo-big-title h1 {
     font-size: 30px !important;
