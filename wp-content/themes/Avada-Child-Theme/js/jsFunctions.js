@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
     //    console.log(document.getElementById('main').style.backgroundAttachment);
     jQuery('.fusion-header-wrapper').addClass('fusion-is-sticky');
     //If mobile view
-    jQuery("#whysapigo").addClass("to-bottom");
-    jQuery("#whysapigo").appendTo("#welcome-img");
+//    jQuery("#whysapigo").addClass("to-bottom");
+//    jQuery("#whysapigo").appendTo("#welcome-img");
 
 
 });
