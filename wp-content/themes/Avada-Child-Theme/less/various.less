@@ -56,13 +56,22 @@ h2 {
 
 .valign-outer {
     position: relative;
+    height: inherit;
     min-height: 300px;
 }
 
-.valign-inner {
+.valign-desktop {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.to-right {
+    right: 0;
+}
+
+.to-left {
+    left: 0;
 }
 
 .to-bottom {
@@ -87,6 +96,10 @@ h2 {
         //        transform: translateY(-50%);
         margin-top: 10px !important;
     }
+}
+
+.push-down-desktop {
+    margin-top: 30px !important;
 }
 
 #main {
@@ -196,8 +209,6 @@ a.fusion-logo-link img {
 .content-container {
     text-align: justify !important;
 }
-
-.valign {}
 
 .rounded {
     img {
@@ -398,11 +409,83 @@ a.fusion-logo-link img {
             }
         }
     }
+    /* Workable items */
+    //    .whr-location {
+    //        ul {
+    //            list-style: none;
+    //            li {
+    //                list-style: none;
+    //            }
+    //        }
+    //        span {
+    //            font-weight: bold;
+    //            letter-spacing: 1.1px;
+    //        }
+    //        ul.whr-info {
+    //            list-style: none;
+    //            margin-left: 3px;
+    //            pading-left: 5px;
+    //        }
+    //    }
+    #open-positions {
+        margin-top: 30px;
+        p {
+            margin-bottom: 0;
+            font-size: 20px !important;
+        }
+        .fusion-column-wrapper {
+            #whr_embed_hook {
+                ul.whr-items {
+                    list-style: none;
+                    margin-left: 0;
+                    padding-left: 0;
+                    margin-top: 0;
+                    li.whr-item {
+                        h3.whr-title {
+                            a {
+                                font-style: normal;
+                                //            color: rgb(116, 116, 116);
+                                font-family: "Open Sans";
+                                font-size: 18px;
+                                //                                list-style: none;
+                            }
+                            margin-bottom: 0;
+                            margin-top: 0;
+                        }
+                        ul.whr-info {
+                            list-style: none;
+                            padding-left: 5px;
+                            span {
+                                font-weight: bold;
+                                letter-spacing: 1.1px;
+                            }
+                            li.whr-location {
+                                list-style: none;
+                                display: none;
+                            }
+                            li.whr-date {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //    .whr-title {
+    //        a {
+    //            font-style: normal;
+    //            //            color: rgb(116, 116, 116);
+    //            font-family: "Open Sans";
+    //            font-size: 18px;
+    //            margin-bottom: 0;
+    //        }
+    //    }
 }
 
 #leading-sapigo-placeholder {
     //    background-color: rgba(252, 252, 252, 0.95) !important;
-    //    background-color: rgba(0, 18, 61, 0.9) !important;//    
+    //    background-color: rgba(0, 18, 61, 0.9) !important;//
     //    background-color: rgba(0, 0, 0, 0.7);
     .fusion-row {
         padding: 20px 50px !important;

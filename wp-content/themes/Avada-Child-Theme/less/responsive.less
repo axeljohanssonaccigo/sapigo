@@ -1,5 +1,8 @@
 //QUITE BIG
 @media only screen and (max-width: 1200px) {
+    .valign-outer {
+        min-height: 340px;
+    }
     #welcome-img {
         background-image: url("/wp-content/themes/Avada-Child-Theme/img/platform-1920px.jpg");
         min-height: 600px;
@@ -34,10 +37,23 @@
     #why-sapigo-placeholder-mobile {
         display: none;
     }
+    .valign-desktop {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 
 //MEDIUM
 @media only screen and (max-width: 1024px) {
+    .valign-outer {
+        min-height: 320px;
+    }
+    .valign-desktop {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
     #welcome-img {
         min-height: 500px;
     }
@@ -179,10 +195,20 @@
 
 //SMALL
 @media only screen and (max-width: 800px) {
-    .valign-inner {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+    #open-positions {
+        p {
+            font-size: 18px !important;
+        }
+    }
+    .valign-outer {
+        min-height: 300px;
+    }
+    .push-down-desktop {
+        margin-top: 15px !important;
+    }
+    .valign-desktop {
+        position: relative;
+        transform: none;
     }
     #welcome-img {
         min-height: 450px;
@@ -275,10 +301,12 @@
 
 //SMALLEST
 @media only screen and (max-width: 640px) {
-    .valign-inner {
+    .push-down-desktop {
+        margin-top: 15px !important;
+    }
+    .valign-desktop {
         position: relative;
-        top: 50%;
-        transform: translateY(-50%);
+        transform: none;
     }
     #welcome-img {
         min-height: 400px;
