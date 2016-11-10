@@ -19,6 +19,19 @@ function my_theme_enqueue_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_scripts' );
 
+function sapigo_widgets_init() {
+    register_sidebar( array(
+		'name' =>esc_html__( 'blog carousel', 'sapigo' ),
+		'id' => 'blogcarousel',
+		'description' => 'Bloggkarusell',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+}
+add_action( 'widgets_init', 'sapigo_widgets_init' );
+
 function avada_lang_setup() { 
     $lang = get_stylesheet_directory() . '/languages'; 
     load_child_theme_textdomain( 'Avada', $lang ); 
