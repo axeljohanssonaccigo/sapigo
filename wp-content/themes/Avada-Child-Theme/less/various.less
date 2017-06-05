@@ -102,16 +102,19 @@ h2 {
     margin-top: 30px !important;
 }
 
-#main {
-    background-image: url("/wp-content/themes/Avada-Child-Theme/img/platform-1920px.jpg");
-    background-repeat: repeat;
+.landing-page-background{
+    background-image: url("/wp-content/themes/Avada-Child-Theme/img/platform-1920px.jpg") !important;        
+    background-repeat: repeat !important;
     background-attachment: fixed !important;
-    background-position: center center;
-    background-size: cover;
+    background-position: center center !important;
+    background-size: cover !important;
     padding-top: 0 !important;
-    padding-bottom: 0px;
+    padding-bottom: 0px !important;
     //    margin-top: 83px;
-    -webkit-background-size: cover;
+    -webkit-background-size: cover !important;
+}
+
+#main {
     #sapigo-big-title {
         background-color: rgba(25, 29, 62, 0.9);
         padding: 5px;
@@ -233,6 +236,22 @@ a.fusion-logo-link img {
         color: #fff !important;
         text-align: justify !important;
         text-align-last: left;
+                a {
+            font-weight: bold;
+            color: #fff;
+            &:active {
+                color: rgb(4, 172, 220);
+            }
+            &:focus {
+                color: rgb(4, 172, 220);
+            }
+            &:hover {
+                color: rgb(4, 172, 220) !important;
+            }
+            &:visited {
+                color: #fff;
+            }
+        }
     }
 }
 
@@ -568,4 +587,10 @@ footer#footer {
         display: none !important;
     }
 }
+}
+.no-display{
+    display: none !important;
+}
+#blog-placeholder{
+    background-color: rgba(254, 254, 254, 0.95) !important;
 }

@@ -5,7 +5,7 @@ Description: Child theme for Avada theme
 Author: ThemeFusion
 Author URI: https://theme-fusion.com
 Template: Avada
-Version: 1.0.0
+Version: 1.0.9 
 Text Domain:  Avada
 */
 .text-right {
@@ -75,15 +75,15 @@ h2 {
 .push-down-desktop {
   margin-top: 30px !important;
 }
-#main {
-  background-image: url("/wp-content/themes/Avada-Child-Theme/img/platform-1920px.jpg");
-  background-repeat: repeat;
+.landing-page-background {
+  background-image: url("/wp-content/themes/Avada-Child-Theme/img/platform-1920px.jpg") !important;
+  background-repeat: repeat !important;
   background-attachment: fixed !important;
-  background-position: center center;
-  background-size: cover;
+  background-position: center center !important;
+  background-size: cover !important;
   padding-top: 0 !important;
-  padding-bottom: 0px;
-  -webkit-background-size: cover;
+  padding-bottom: 0px !important;
+  -webkit-background-size: cover !important;
 }
 #main #sapigo-big-title {
   background-color: rgba(25, 29, 62, 0.9);
@@ -174,6 +174,22 @@ a.fusion-logo-link img {
   color: #fff !important;
   text-align: justify !important;
   text-align-last: left;
+}
+#why-sapigo-placeholder p a {
+  font-weight: bold;
+  color: #fff;
+}
+#why-sapigo-placeholder p a:active {
+  color: #04acdc;
+}
+#why-sapigo-placeholder p a:focus {
+  color: #04acdc;
+}
+#why-sapigo-placeholder p a:hover {
+  color: #04acdc !important;
+}
+#why-sapigo-placeholder p a:visited {
+  color: #fff;
 }
 #why-sapigo-placeholder-mobile {
   padding: 0 !important;
@@ -411,6 +427,12 @@ footer#footer a:hover {
 }
 .fusion-meta-info .fusion-meta-info-wrapper a {
   display: none !important;
+}
+.no-display {
+  display: none !important;
+}
+#blog-placeholder {
+  background-color: rgba(254, 254, 254, 0.95) !important;
 }
 @media only screen and (max-width: 1200px) {
   .valign-outer {

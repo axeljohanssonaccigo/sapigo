@@ -1,5 +1,5 @@
 <?php
-$version = '0.81';
+$version = '0.82';
 function theme_enqueue_styles() {
     global $version;
     $parent_style = 'avada-parent-style';
