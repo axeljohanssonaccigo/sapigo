@@ -387,3 +387,19 @@ footer#footer a:focus {
 footer#footer a:hover {
   color: inherit;
 }
+.has-sidebar #content {
+  width: 100% !important;
+}
+.fusion-page-title-bar.fusion-page-title-bar-breadcrumbs.fusion-page-title-bar-center {
+  display: none !important;
+}
+.single-navigation {
+  margin-bottom: 0 !important;
+  border: none !important;
+}
+.fusion-meta-info {
+  display: none !important;
+}
+.fusion-meta-info .fusion-meta-info-wrapper a {
+  display: none !important;
+}
