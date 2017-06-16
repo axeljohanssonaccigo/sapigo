@@ -5,7 +5,7 @@ Description: Child theme for Avada theme
 Author: ThemeFusion
 Author URI: https://theme-fusion.com
 Template: Avada
-Version: 1.0.9 
+Version: 1.0.13    
 Text Domain:  Avada
 */
 .text-right {
@@ -422,17 +422,18 @@ footer#footer a:hover {
   margin-bottom: 0 !important;
   border: none !important;
 }
-.fusion-meta-info {
-  display: none !important;
-}
-.fusion-meta-info .fusion-meta-info-wrapper a {
-  display: none !important;
+.fusion-meta-info .fusion-meta-info-wrapper .vcard .fn a {
+  pointer-events: none;
 }
 .no-display {
   display: none !important;
 }
 #blog-placeholder {
   background-color: rgba(254, 254, 254, 0.95) !important;
+}
+#blog-placeholder .wp-posts-carousel .wp-posts-carousel-desc {
+  min-height: 110px;
+  max-height: 110px;
 }
 @media only screen and (max-width: 1200px) {
   .valign-outer {
